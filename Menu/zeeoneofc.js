@@ -4,7 +4,7 @@ return`Hello ${pushname}🤗
 📛 Nama : ${pushname} 
 🆔 Nomor : @${sender.split("@")[0]} 
 📊 Status : ${isOwner?`Owner ⚔️`:isPrem?`Premium 🏅`:`Free User`} 
-🎁 Expired Prem : ${isOwner?`Unlimited Owner`:isPrem ? `${cekvipp.days}d, ${cekvipp.hours}h, ${cekvipp.minutes}m, ${cekvipp.seconds}s`:'Not Premium'}
+🎁 Masa Berlaku : ${isOwner?`Unlimited Owner`:isPrem ? `${cekvipp.days}d, ${cekvipp.hours}h, ${cekvipp.minutes}m, ${cekvipp.seconds}s`:'Not Premium'}
 💳 Limit : ${isOwner?`Unlimited`: isPrem ? `Unlimited Premium` : getLimit(sender, limitawal, limit) +' / '+limitawal}
 💹 Balance : $${getBalance(sender, balance)}
 
@@ -174,4 +174,7 @@ ${simbolnya} ${prefix}getpic
 ${simbolnya} ${prefix}inspect
 ${simbolnya} ${prefix}wame 
 ${simbolnya} ${prefix}towame${petik}`
+
+Fitur Masih Banyak Yang *UNDER-DEVELOPMENT*
+MOHON PENGERTIANNYA, TERIMA KASIH
 }
