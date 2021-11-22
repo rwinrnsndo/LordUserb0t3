@@ -115,9 +115,9 @@ let url_gif = setting.url_gif
 let public_mode = setting. public_mode
 let mlistmsg = false 
 let multiprefix = true 
-let nopref = false
+let nopref = true
 let autovn = false
-let ngetik = false
+let ngetik = true
 let menusimple = false
 let Mloc = false
 let autoregister = setting.user_register
@@ -607,15 +607,15 @@ Minat? CHAT KE wa.me/${owner_number}`,
 				const fakeReply = (teks, target, teks2) => {
 					Zeeone.sendMessage(from, teks, text, {quoted: {key: {fromMe: false, participant: `${target}@s.whatsapp.net`, ...(from ? { remoteJid: from } : {}) }, message: { conversation: teks2}}})
 				}
-				let authorname = Zeeone.contacts[from] != undefined ? Zeeone.contacts[from].vname || Zeeone.contacts[from].notify : undefined	
-				if (authorname != undefined) { } else { authorname = groupName }	
+				let authorname = Zeeone.contacts[from] != KIKI ? Zeeone.contacts[from].vname || Zeeone.contacts[from].notify : KIKI	
+				if (authorname != KIKI) { } else { authorname = groupName }	
 					function addMetadata(packname, author) {	
-						if (!packname) packname = 'self'; if (!author) author = 'Zeeone';author = author.replace(/[^a-zA-Z0-9]/g, '');	
+						if (!packname) packname = 'STICKERPACK'; if (!author) author = 'KIKI';author = author.replace(/[^a-zA-Z0-9]/g, '');	
 						let name = `${author}_${packname}`
 						if (fs.existsSync(`./sticker/${name}.exif`)) return `./sticker/${name}.exif`
 				const json = {	
-					"sticker-pack-name": packname,
-					"sticker-pack-publisher": author,
+					"sticker-pack-name": STICKER PACK,
+					"sticker-pack-publisher": KIBOTZ - KIKI,
 				}
 				const littleEndian = Buffer.from([0x49, 0x49, 0x2A, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57, 0x07, 0x00])	
 				const bytes = [0x00, 0x00, 0x16, 0x00, 0x00, 0x00]	
