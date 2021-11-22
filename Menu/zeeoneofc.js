@@ -174,7 +174,4 @@ ${simbolnya} ${prefix}getpic
 ${simbolnya} ${prefix}inspect
 ${simbolnya} ${prefix}wame 
 ${simbolnya} ${prefix}towame${petik}`
-
-Fitur Masih Banyak Yang *UNDER-DEVELOPMENT*
-MOHON PENGERTIANNYA, TERIMA KASIH
 }
