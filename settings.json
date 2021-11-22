@@ -3,7 +3,7 @@
     "anti_delete": false,
     "anti_call": false,
     "autorespon": false,
-    "user_register": true,
+    "user_register": false,
 	"prefix": ".",
 	"ownerNumber": "6285883789662",
 	"ownername": "HARIYONO RIZKI",
