@@ -1,11 +1,3 @@
-/*
-
-	🔕 KLO MAU RE UPLOAD IZIN DULU, BACA DESK VIDEO
-	
-	 Order sc untuk jualan game, kebutuhan sosmed, pulsa, dll. Cek https://wa.me/p/4670890746303230/62887435047326
-	
-	 Jika ada module yang kurang bisa chat saya di wa
-*/
 const
 	{
 		WAConnection: _WAConnection,
@@ -109,7 +101,7 @@ let antitrol = true
 
 let hit_today = []
 let blocked = []
-let limitawal = "100" 
+let limitawal = "150" 
 let namabot = setting.botname
 let owner_name = setting.ownername
 let owner_number = setting.ownerNumber
@@ -421,42 +413,44 @@ var waktoo = date.getHours();
 
 			const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
 			if(time2 < "23:59:00"){
-				var ucapannya = `Night 🌚 ${pushname}`
+				var ucapannya = `Selamat Malam 🌚 ${pushname}`
 				}
        	 if(time2 < "19:00:00"){
-     		   var ucapannya = `Night 🌚 ${pushname}`
+     		   var ucapannya = `Selamat Malam 🌚 ${pushname}`
 				}
      	   if(time2 < "18:00:00"){
-     		   var ucapannya = `Afternoon 🌅 ${pushname}`
+     		   var ucapannya = `Selamat Sore 🌅 ${pushname}`
 				}
       	  if(time2 < "15:00:00"){
-     		   var ucapannya = `GoodDay 🌞 ${pushname}`
+     		   var ucapannya = `Selamat Siang 🌞 ${pushname}`
 				}
     	    if(time2 < "11:00:00"){
-       		 var ucapannya = `Morning 🌄 ${pushname}`
+       		 var ucapannya = `Selamat Pagi 🌄 ${pushname}`
 				}
     	    if(time2 < "05:00:00"){
-  		      var ucapannya = `Night 🌚 ${pushname}`
+  		      var ucapannya = `Selamat Malam 🌚 ${pushname}`
 				}
 				mess = {
-					wait: 'Proses Lord..',
-					limit: 'Limit kamu habis lord , Silahkan beli dengan #buylimit <nominal> atau minta gift dari user lain',
+					wait: 'Sedang Diproses, Mohon Tunggu..',
+					limit: 'Limit kamu habis, Silahkan beli dengan #buylimit <nominal> atau minta gift dari user lain',
 					sewabot: ` 「 *SEWA BOT* 」 \n\nBerikut list sewa bot kami
 
 •> 25k / BULAN (PREMIUM)
-Isi sendiri
+•> 50k / 2 BULAN (PREMIUM)
+•> 100k / 5 BULAN (PREMIUM)
+•> 150k / LIFETIME (PREMIUM)
 
-Minat? Pm wa.me/${owner_number}`,
-					ban: 'Maaf Lord Nomor Kamu Sudah Di Banned!',
-					error: 'Error Lord, Mungkin Lagi Diperbaiki',
-					errorLink: 'Link Error Lord',
-					succes: '```[ ✓ ]``` Sukses Lord',
+Minat? CHAT KE wa.me/${owner_number}`,
+					ban: 'Maaf, Nomor Kamu Sudah Di Banned!',
+					error: 'Error, Mungkin Lagi Diperbaiki',
+					errorLink: 'Maaf Link/URL ERROR!, Mohon Periksa Kembali',
+					succes: '```[ ✓ ]``` Berhasil',
 					only: {
-						personal: 'Only Private Chat Lord',
-						admin: 'Khusus Admin Group Lord',
-						group: 'Khusus Dalam Grup Lord',
-						 prem: 'Khusus User Premium Lord',
-						owner: 'Khusus Owner Bot Lord',
+						personal: 'Hanya Bisa Digunakan di Private Chat.',
+						admin: 'Hanya Bisa Digunakan oleh Admin Group',
+						group: 'Hanya Bisa Digunakan di Grup',
+						 prem: 'Hanya Bisa Digunakan oleh User Premium',
+						owner: 'Hanya Bisa Digunakan oleh Owner Bot',
 						 }
 					} 
 	    const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net",   "remoteJid": "6289523258649-1604595598@g.us"  }, "message": {orderMessage: {itemCount: 2021,status: 200, thumbnail: thumbnail, surface: 200, message: `「 𝐑𝐔𝐍𝐓𝐈𝐌𝐄 」\n${runtime2}`, orderTitle: 'zeeoneofc', sellerJid: '0@s.whatsapp.net'}}, sendEphemeral: true}
@@ -1046,7 +1040,7 @@ const checkWin = (sender) => {
 							{
 							buttonId: `antilink off`,
 							buttonText: {
-								displayText: `🔖 DISABLE ANTILINK`,
+								displayText: `🔖 NONAKTIFKAN ANTILINK`,
 								},
 								type: 1,
 								}]);
@@ -1071,7 +1065,7 @@ const checkWin = (sender) => {
 									{
 										buttonId: `antibadword off`,
 										buttonText: {
-											displayText: `🔖 DISABLE ANTI BADWORD`,
+											displayText: `🔖 NONAKTIFKAN ANTI BADWORD`,
 											},
 											type: 1,
 											}]);
